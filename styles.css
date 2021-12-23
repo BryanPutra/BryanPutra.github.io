@@ -45,6 +45,12 @@ body{
 
 .header-left{
     flex: 1;
+    
+}
+
+.header-left a{
+  color: #F2F4F7;
+  text-decoration: none;
 }
 
 .header-center{
@@ -558,6 +564,10 @@ body{
     flex: 1;
     display: flex;
     justify-content: flex-end;
+}
+
+.footer-right a{
+  color: #020205;
 }
 
 .footer-center a{
