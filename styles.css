@@ -791,10 +791,19 @@ body{
   html {
     font-size: 12px;
   }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .about-container{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    padding-bottom: 2rem;
   }
   .about-right{
     width: 85%;
@@ -804,7 +813,7 @@ body{
     text-align: center;
   }
   .about-left p{
-    margin: 2rem 3rem;
+    margin: 2rem 2.5rem;
   }
 
   .interests{
@@ -812,11 +821,36 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .interest-container{
-    width: 50%;
+
+  .interests-container h1{
+    margin-top: 0;
   }
+
+  .interest-container{
+    width: 100%;
+  }
+
+  .tech-title h1{
+    font-size: 1.25rem;
+  }
+
+  .technologies{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .technology-container{
+    width: 100%;
+  }
+
   .tech-logo{
     width: 15%;
+  }
+
+  .tech-bar-container{
+    width: 100%;
   }
 
   .projects-container{
@@ -842,9 +876,34 @@ body{
   }
   iframe{
     width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
   }
 
   .project-container.two{
     flex-direction: column-reverse;
   }
+
+  .container{
+    width: 80%;
+    padding: 30px 40px 30px 40px ;
+  }
+
+  .container .content .left-side{
+    display: none;
+  }
+  .container .content .right-side{
+    margin-left: 0;
+    width: 100%;
+    /* text-align: center; */
+  }
+  .up-ellipse{
+    width: 17%;
+  }
+
+  .up{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
 }
