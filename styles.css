@@ -485,7 +485,7 @@ body{
   .right-side .button{
     display: inline-block;
   }
-  .right-side .button input[type="button"]{
+  .right-side .button input[type="submit"]{
     color:#020205;
     font-size: 18px;
     outline: none;
@@ -496,7 +496,7 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .button input[type="button"]:hover{
+  .button input[type="submit"]:hover{
     background: #E43A19;
     color:#F2F4F7;
   }
@@ -786,3 +786,65 @@ body{
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .about-right{
+    width: 85%;
+    margin-bottom: 6rem;
+  }
+  .about-left{
+    text-align: center;
+  }
+  .about-left p{
+    margin: 2rem 3rem;
+  }
+
+  .interests{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .interest-container{
+    width: 50%;
+  }
+  .tech-logo{
+    width: 15%;
+  }
+
+  .projects-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .project-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-right{
+    text-align: center;
+    width: 75%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .project-left{
+    text-align: center;
+    width: 75%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  iframe{
+    width: 100%;
+  }
+
+  .project-container.two{
+    flex-direction: column-reverse;
+  }
+}
