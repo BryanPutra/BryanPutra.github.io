@@ -40,7 +40,7 @@ body{
     width: 100%;
     font-size: 1.2rem;
     /* color: #020205; */
-    margin: 1rem 0rem;
+    margin: 1rem 3rem;
 }
 
 .header-left{
@@ -119,14 +119,17 @@ body{
 
 .main-container{
     max-width: 1280px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container{
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-top: 12rem;
+    margin: 12rem 2rem 0rem 2rem;
     padding-bottom: 5rem;
 }
 
@@ -181,6 +184,8 @@ body{
 .interests-container{
     text-align: center;
     padding-bottom: 5rem;
+    margin: 0rem 2rem;
+    width: 100%;
 }
 
 .interests-container h1{
@@ -191,7 +196,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
 }
 
 .interest-container{
@@ -224,11 +228,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 83%;
 }
 
 .tech-width-container{
     border-radius: 15px;
-    width: 83%;
+    width: 85%;
 }
 
 .technologies-container h1{
@@ -365,7 +370,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 5rem;
+    margin: 0rem 3rem 5rem 3rem;
 }
 
 .projects-container h1{
@@ -412,11 +417,11 @@ body{
 }
 
 .container{
-    width: 100%;
+    width: 80%;
     /* background: #F2F4F7; */
     border-radius: 6px;
     padding: 30px 60px 30px 40px;
-    margin-bottom: 5rem;
+    margin: 0rem 2rem 5rem 2rem;
     color: #020205;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 5px 5px;
   }
@@ -552,7 +557,7 @@ body{
     width: 100%;
     font-size: 1.2rem;
     color: #020205;
-    margin: 1rem 0rem;
+    margin: 1rem 3rem;
 }
 
 .footer-width-container{
@@ -572,7 +577,7 @@ body{
 }
 
 .footer-center{
-    flex: 1;
+    flex: 2;
     text-align: center;
 }
 
@@ -803,7 +808,32 @@ body{
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1279px){
+  html{
+    font-size: 14px;
+  }
+  .about-container{
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .interests{
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .up-ellipse{
+    width: 10%;
+    height: 5.5vh;
+  }
+
+  .up{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   html {
     font-size: 12px;
   }
@@ -838,20 +868,6 @@ body{
   }
   .about-left p{
     margin: 2rem 2.5rem;
-  }
-
-  .interests{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .interests-container h1{
-    margin-top: 0;
-  }
-
-  .interest-container{
-    width: 100%;
   }
 
   .tech-title h1{
@@ -922,14 +938,14 @@ body{
     /* text-align: center; */
   }
   .up-ellipse{
-    width: 17%;
-    height: 4vh;
+    width: 15%;
+    height: 4.5vh;
   }
 
   .up{
     width: 1.5rem;
     height: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
   .header-container{
     margin: 2.5rem 2.5rem;
@@ -994,6 +1010,28 @@ body{
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
+  .interests{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .interests-container h1{
+    margin-top: 0;
+  }
+
+  .interest-container{
+    width: 60%;
+  }
+
+  .up-ellipse{
+    width: 18%;
+    height: 5vh;
+  }
+  .up{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1.5rem;
+  }
 
 }
