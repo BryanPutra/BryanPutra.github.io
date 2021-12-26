@@ -1,5 +1,5 @@
 *{
-    font-family: 'Esteban', serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     letter-spacing: .5px;
 }
@@ -57,6 +57,22 @@ body{
     flex: 2;
     text-align: center;
 }
+
+.dropdown-container{
+  display: none;
+}
+
+.burger-button{
+  color: #F2F4F7;
+  background-color: #020205;
+  border: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
 .header-right{
     flex: 1;
     display: flex;
@@ -792,6 +808,14 @@ body{
     font-size: 12px;
   }
 
+  .header-right{
+    display: none;
+  }
+  .header-left{
+    justify-content: center;
+    align-items: center;
+  }
+
   .main-container{
     display: flex;
     flex-direction: column;
@@ -899,11 +923,77 @@ body{
   }
   .up-ellipse{
     width: 17%;
+    height: 4vh;
   }
 
   .up{
     width: 1.5rem;
     height: 1.5rem;
+    margin-top: 1.5rem;
   }
+  .header-container{
+    margin: 2.5rem 2.5rem;
+  }
+  .footer-center{
+    display: none;
+  }
+  .footer-container{
+    margin: 1rem 2rem;
+  }
+
+  .header-center{
+    text-align: right;
+  }
+
+  .nav-list.header{
+    display: none;
+  }
+
+  .nav-list-dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-list-dropdown a{
+    text-decoration: none;
+    color: #F2F4F7;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .nav-list.footer{
+    display: block;
+    padding-left: 0;
+  }
+
+  .dropdown-container{
+    position: relative;
+    display: block;
+    text-align: right;
+  }
+  .dropdown-menu{
+    position: absolute;
+    background-color: #020205;
+    z-index: 100;
+    right: 0;
+    top: calc(100% + .25rem);
+    opacity: 0;
+    padding: .5rem;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 0px 3px 3px;
+    border-radius: .25rem;
+    transform: translateY(-20px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+  }
+
+  .dropdown-container.active > .burger-button + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
 
 }
