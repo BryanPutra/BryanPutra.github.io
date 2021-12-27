@@ -8,6 +8,10 @@ html{
   scroll-behavior: smooth;
 }
 
+p{
+  text-align: justify;
+}
+
 h1{
     font-family: 'Montserrat', sans-serif;
 }
@@ -1022,6 +1026,10 @@ body{
 
   .interest-container{
     width: 60%;
+  }
+
+  .container{
+    width: 65%;
   }
 
   .up-ellipse{
